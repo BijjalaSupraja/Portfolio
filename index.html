@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <h1>Hello, I'm <br><span>SUPRAJA BIJJALA</span></h1>
+            <p>From CMR Institute of Technology</p>
+            <p>Computer Science and Engineering</p>
+
+        </div>
+
+    </div>
+    </div>
+<!-------------------about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Seeking a suitable position in a reputed organization. Looking forward to an opportunity
+                            which would help me to acquire skills there by giving scope to exploit
+                            for the development of the organization</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('personal information')">Personal Information</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                
+                            </div>
+                            <div class="tab-contents active-tab" id="personal information">
+                                <ul>
+                                    <li><span>Mail ID:</span><br>bijjalasupraja1908@gmail.com</li>
+                                    <li><span>Contact No:</span><br>8639824671</li>
+                                    <li><span>Date of Birth</span><br>11-04-2002</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021-2024</span><br>B.TECH-CMRIT, Hyderabad</li>
+                                    <li><span>2018-2021</span><br>Diploma-Government Polytechnic, Warangal</li>
+                                    <li><span>2018</span><br>SSC-The Thapovan High School, Hyderabad</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------skills-->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="Skills-list">
+                <div>
+                    <h2>Technical Skills:</h2>
+                    <p>HTML <br><br>CSS <br><br> JAVASCRIPT<br><br> PYTHON<br><br> JAVA<br><br> SQL<br><br> C<br><br> C++</p>
+                </div>
+                <div>
+                    <h2>Certification:</h2>
+                    <p>Certificate of recogonition  in Robotic Process Automation(UI -RPA003) under Cognizant Foundation Program Tech4all.<br><br>Course Completion certificate in JAVA PROGRAMMING FUNDAMENTALS by Infosys(Springboard).<br><br>Certificate of Participation in Virtusa Engineering Equity Hackathon held by Virtusa<br><br>Course certificate in Technical Support Fundamentals by Google with Coursera</p>
+                </div>
+                <div>
+                    <h2>Achievements:</h2>
+                    <p> certificate of Appeeciation in National Level Mathematics Quiz in Differential Equations conducted by Vaagdevi College of Enginneering held  in September 17 to 19, 2020.<br><br>achievement of Gold medal in KIA karate Academy in 2018.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="1.jpg">
+                    <div class="layer">
+                        <h3>Motorbike Security Using Arduino and Vibration Sensor</h3>
+                        <p>Using vibration sensor along with Arduino we can easily secure our vehicles from thieves and unknown stolens ,when we are not with the vehicle.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="2.jpg">
+                </div>
+                <div class="work">
+                    <img src="3.jpg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!---------------contact-->
+    <div id="contact">
+        <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>bijjalasupraja1908@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+918639824671</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_urs_truly_supraja_/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bijjala-supraja-386787234"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="resume.pdf" download class="btn btn2">Download RESUME</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright © Created by Supraja Bijjala</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontents of tabcontents){
+                tabcontents.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    
+</body>
+</html>
